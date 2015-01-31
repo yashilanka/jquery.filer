@@ -257,7 +257,7 @@ Filer Variables are created for simple usage them in the plugin string options. 
 
 PHP File Uploader
 -------
-PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link bellow.
+PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link below.
 <br>
 <b><a href="https://github.com/CreativeDream/php-uploader" target="blank">PHP Uploader</a></b>
 
