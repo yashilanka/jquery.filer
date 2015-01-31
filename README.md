@@ -237,7 +237,7 @@ __Attributes:__
 * data-jfiler-appendTo | append thumbnails to selector
 * data-jfiler-theme | custom filer theme
 * data-jfiler-excludeName | exclude files input name
-* data-jfiler-files | append files, ex: "{"files":[{"name":"appended_file.jpg","size":5453,"type":"image/jpg",file:"https://avatars0.githubusercontent.com/u/4771374?v=3&s=460"}]}"
+* data-jfiler-files | append files, ex: "{"files":[{"name":"appended_file.jpg","size":5453,"type":"image/jpg",file:"/path/to/file/appended_file.jpg"}]}"
 
 Filer Variables
 -------
