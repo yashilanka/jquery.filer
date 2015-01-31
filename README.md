@@ -262,8 +262,7 @@ Whether you find a bug, have a great feature request or you fancy owning a task 
 <br>
 By <b>themes</b> you can contribute to plugin by making a Pull Request to <i>/css/themes/</i> and writing a short description containing plugin templates options.
 
-PHP File Uploader
--------
+### PHP File Uploader ###
 PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link below.
 <br>
 <b><a href="https://github.com/CreativeDream/php-uploader" target="blank">PHP Uploader</a></b>
