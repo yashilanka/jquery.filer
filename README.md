@@ -255,6 +255,10 @@ Filer Variables are created for simple usage them in the plugin string options. 
 * fi-limit
 * fi-maxSize
 
+Themes
+-------
+You can contribute to plugin with themes by making a pull request to <b>/css/themes/</b> and writing a short description containing plugin templates options.
+
 PHP File Uploader
 -------
 PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link below.
