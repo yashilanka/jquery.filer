@@ -177,7 +177,7 @@ __Options:__
 * __theme__ jQuery.filer theme. {null, String}
 * __templates__
     * __box__ Thumbnails box element {null, String}
-    * __item__ Thumbnails file item element {String(use <a href="#Filer Variables">Filer Variables</a>), Function}
+    * __item__ Thumbnails file item element {String(use <a href="#filer-variables">Filer Variables</a>), Function}
     * __itemAppend__ Thumbnails appended file item element {String(use <a href="#filer-variables">Filer Variables</a>), Function}
     * __progressBar__ Thumbnails file item upload progress bar element {String}
     * __itemAppendToEnd__ Append file item to the end of list {Boolean}
