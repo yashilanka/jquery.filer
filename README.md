@@ -255,9 +255,12 @@ Filer Variables are created for simple usage them in the plugin string options. 
 * fi-limit
 * fi-maxSize
 
-Themes
+Contribute
 -------
-You can contribute to plugin with themes by making a pull request to <b>/css/themes/</b> and writing a short description containing plugin templates options.
+Want to be part of this project? Great! All are welcome!
+Whether you find a bug, have a great feature request or you fancy owning a task from the road map above feel free to get in touch.
+<br>
+By <b>themes</b> you can contribute to plugin by making a Pull Request to <i>/css/themes/</i> and writing a short description containing plugin templates options.
 
 PHP File Uploader
 -------
