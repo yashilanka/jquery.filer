@@ -1,6 +1,6 @@
 jquery.filer 1.0
 ============
-jquery.Filer - Simple HTML5 File Uploader, a plugin tool for jQuery wich change completely File Input and make it with multiple file selection, drag&drop support, different validations, thumbnails, icons, instant upload, prinscreen upload and many other features and options.
+jQuery.filer - Simple HTML5 File Uploader, a plugin tool for jQuery wich change completely File Input and make it with multiple file selection, drag&drop support, different validations, thumbnails, icons, instant upload, prinscreen upload and many other features and options.
 
 <b><a href="http://creativedream.net/jquery.filer/#demos" target="blank">Demo</a></b> | <b><a href="http://creativedream.net/jquery.filer/#documentation" target="blank">Documentation</a></b>
 
@@ -177,8 +177,8 @@ __Options:__
 * __theme__ jQuery.filer theme. {null, String}
 * __templates__
     * __box__ Thumbnails box element {null, String}
-    * __item__ Thumbnails file item element {String(use <a href="#Filer Variables>Filer Variables</a>), Function}
-    * __itemAppend__ Thumbnails appended file item element {String(use <a href="#Filer Variables>Filer Variables</a>), Function}
+    * __item__ Thumbnails file item element {String(use <a href="#Filer Variables">Filer Variables</a>), Function}
+    * __itemAppend__ Thumbnails appended file item element {String(use <a href="#filer-variables">Filer Variables</a>), Function}
     * __progressBar__ Thumbnails file item upload progress bar element {String}
     * __itemAppendToEnd__ Append file item to the end of list {Boolean}
     * __removeConfirmation__ Remove file confirmation {Boolean}
@@ -216,10 +216,10 @@ __Options:__
     * __drop__ New Input on drag text {String}
     * __removeConfirmation__ Remove file confirmation text {String}
     * __errors__
-        * __filesLimit__ {String(use <a href="#Filer Variables>Filer Variables</a>)}
-        * __filesType__ {String(use <a href="#Filer Variables>Filer Variables</a>)}
-        * __filesSize__ {String(use <a href="#Filer Variables>Filer Variables</a>)}
-        * __filesSizeAll__ {String(use <a href="#Filer Variables>Filer Variables</a>)}
+        * __filesLimit__ {String(use <a href="#filer-variables">Filer Variables</a>)}
+        * __filesType__ {String(use <a href="#filer-variables">Filer Variables</a>)}
+        * __filesSize__ {String(use <a href="#filer-variables">Filer Variables</a>)}
+        * __filesSizeAll__ {String(use <a href="#filer-variables">Filer Variables</a>)}
 
 __Triggers:__
 * $('#input_file').trigger("filer.append", {files:[]})
@@ -241,9 +241,9 @@ __Attributes:__
 
 Filer Variables
 -------
-Filer Variables are created for simple usage them in the plugin string options. To use them just write <i>{{fi-(variable name)}}</i>. Below are all available variables that can be used:
+Filer Variables are created for simple usage them in the plugin string options. To use them just write <b>{{fi-(variable name)}}</b>. Below are all available variables that can be used:
 * fi-name
-* fi_size
+* fi-size
 * fi-size2
 * fi-type
 * fi-extension
@@ -257,7 +257,8 @@ Filer Variables are created for simple usage them in the plugin string options. 
 
 PHP File Uploader
 -------
-PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link bellow
+PHP File Uploader is an easy to use, hi-performance File Upload Script which allows you to upload files to webserver. You can get it on the link bellow.
+<br>
 <b><a href="https://github.com/CreativeDream/php-uploader" target="blank">PHP Uploader</a></b>
 
 License
