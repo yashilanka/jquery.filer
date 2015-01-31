@@ -203,7 +203,7 @@ __Options:__
     * __drop__ A function that is fired when a dragged element is dropped on a valid drop target.
 * __addMore__ Multiple file selection without instant uploading {Boolean}
 * __clipBoardPaste__ Printscreen paste and upload {Boolean}
-* __excludeName__ Removed files input name {null, String}
+* __excludeName__ Removed files input name {null, String} Default: jfiler-items-exclude-(input file name)-(input id)
 * __beforeShow__ A function that is fired before showing thunbnails {Function}
 * __onSelect__ A function that is fired after selecting files {Function}
 * __afterShow__ A function that is fired after appending all thumbnails items {Function}
