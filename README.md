@@ -33,13 +33,16 @@ Include the jquery.filer css file in your html page.
 <link href="./css/themes/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" />
 ~~~~
 
-__HTML:__
+__Scripts:__
 
 Include the jQuery library and jquery.filer script file in your html page.
 ~~~~ html
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="./js/jquery.filer.min.js"></script>
 ~~~~
+
+__HTML:__
+
 Create an input file element.
 ~~~~ html
 <form action="upload.php" method="post" enctype="multipart/form-data">
@@ -47,6 +50,7 @@ Create an input file element.
     <input type="submit">
 </form>
 ~~~~
+
 __Javascript:__
 
 The plugin is named "filer" and can be applied to any element. You will probably also specify some options while applying the plugin.
