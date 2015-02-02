@@ -26,6 +26,7 @@ Features
 Usage
 -------
 __Styles:__
+
 Include the jquery.filer css file in your html page.
 ~~~~ html
 <link href="./css/jquery.filer.css" type="text/css" rel="stylesheet" />
@@ -33,6 +34,7 @@ Include the jquery.filer css file in your html page.
 ~~~~
 
 __HTML:__
+
 Include the jQuery library and jquery.filer script file in your html page.
 ~~~~ html
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -46,6 +48,7 @@ Create an input file element.
 </form>
 ~~~~
 __Javascript:__
+
 The plugin is named "filer" and can be applied to any element. You will probably also specify some options while applying the plugin.
 ~~~~ javascript
 $(document).ready(function() {
