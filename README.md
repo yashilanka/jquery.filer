@@ -201,7 +201,7 @@ __Options:__
     * __beforeSend__ A pre-request callback function {Function}
     * __success__ A function to be called if the request succeeds {Function}
     * __error__ A function to be called if the request fails {Function}
-    * __statusCode__ An object of numeric HTTP codes {Function}
+    * __statusCode__ An object of numeric HTTP codes {Object}
     * __onProgress__ A function called while uploading file with progress percentage {Function}
 * __dragDrop__
     * __dragEnter__ A function that is fired when a dragged element enters the input. {Function}
