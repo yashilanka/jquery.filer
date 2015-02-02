@@ -40,7 +40,7 @@ Include the jQuery library and jquery.filer script file in your html page.
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="./js/jquery.filer.min.js"></script>
 ~~~~
-Create link elements whose href attributes will contain the path of the element you wish to open within the iLightbox.
+Create an input file element.
 ~~~~ html
 <form action="upload.php" method="post" enctype="multipart/form-data">
     <input type="file" name="files[]" id="input_file" multiple="multiple">
