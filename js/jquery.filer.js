@@ -164,6 +164,7 @@
                         }
                         f._itFl = [];
                         f._itFc = null;
+                        f._ajFc = 0;
                         p.find("input[name^='jfiler-items-exclude-']:hidden").remove();
                         l.fadeOut("fast", function() {
                             $(this).remove();
@@ -301,7 +302,7 @@
                                 });
                                 return true;
                             }
-                            if (window.File && window.FileList && window.FileReader && opts.type == "image") {
+                            if (window.File && window.FileList && window.FileReader && opts.type == "image" && opts.size < 6e+6) {
                                 var y = new FileReader;
                                 y.onload = function(e) {
                                     var g = '<img src="' + e.target.result + '" draggable="false" />',
@@ -426,8 +427,13 @@
                                     }
                                     return myXhr
                                 },
-                                complete: function() {
+                                complete: function(jqXHR, textStatus) {
                                     c.ajax = false;
+                                    f._ajFc++;
+                                    if(f._ajFc >= f.files.length){
+                                        n.uploadFile.onComplete != null && typeof n.uploadFile.onComplete == "function" ? n.uploadFile.onComplete(l, p, o, s, jqXHR, textStatus) : null;
+                                        f._ajFc = 0;   
+                                    }
                                 },
                                 beforeSend: function(jqXHR, settings) {
                                     return n.uploadFile.beforeSend != null && typeof n.uploadFile.beforeSend == "function" ? n.uploadFile.beforeSend(el, l, p, o, s, jqXHR, settings) : true;
@@ -443,7 +449,7 @@
                                 statusCode: n.uploadFile.statusCode,
                                 cache: false,
                                 contentType: false,
-                                processData: false
+                                processData: false,
                             });
                             return c.ajax;
                         },
@@ -782,7 +788,8 @@
 
                     files: null,
                     _itFl: [],
-                    _itFc: null
+                    _itFc: null,
+                    _ajFc: 0,
                 }
 
             f.init();
