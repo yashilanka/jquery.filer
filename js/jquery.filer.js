@@ -403,7 +403,7 @@
 
                         formData.append(s.attr('name'), f._itFc.file, (f._itFc.file.name ? f._itFc.file.name : false));
                         if (n.uploadFile.data != null && $.isPlainObject(n.uploadFile.data)) {
-                            for (k in n.uploadFile.data) {
+                            for (var k in n.uploadFile.data) {
                                 formData.append(k, n.uploadFile.data[k])
                             }
                         }
