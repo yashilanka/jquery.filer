@@ -138,6 +138,7 @@ $(document).ready(function() {
             },
             statusCode: {},
             onProgress: function(){},
+            onComplete: function(){}
         },
         dragDrop: {
             dragEnter: null,
@@ -203,6 +204,7 @@ __Options:__
     * __error__ A function to be called if the request fails {Function}
     * __statusCode__ An object of numeric HTTP codes {Object}
     * __onProgress__ A function called while uploading file with progress percentage {Function}
+    * __onComplete__ A function called when all files were uploaded {Function}
 * __dragDrop__
     * __dragEnter__ A function that is fired when a dragged element enters the input. {Function}
     * __dragLeave__ A function that is fired when a dragged element leaves the input. {Function}
