@@ -249,7 +249,7 @@ __Attributes:__
 
 Filer Variables
 -------
-Filer Variables are created for simple usage them in the plugin string options. To use them just write <b>{{fi-(variable name)}}</b>. Below are all available variables that can be used:
+Filer Variables are created for simple usage them in the plugin string options. To use them just write <b>{{fi-(variable name)}}</b>. Below are all available combinations that can be used:
 * fi-name
 * fi-size
 * fi-size2
