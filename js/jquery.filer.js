@@ -2,7 +2,7 @@
  * jQuery.filer
  * Copyright (c) 2015 CreativeDream
  * Website: http://creativedream.net/plugins/jquery.filer
- * Version: 1.0 (30-01-2015)
+ * Version: 1.0.1 (30-03-2015)
  * Requires: jQuery v1.7.1 or later
  */
 (function($) {
