@@ -234,7 +234,7 @@ __Triggers:__
 * $('#input_file').trigger("filer.remove", {id:0})
 * $('#input_file').trigger("filer.reset")
 * $('#input_file').trigger("filer.getList", {files:[]})
-* $('#input_file').trigger("filer.retry", <file id>)
+* $('#input_file').trigger("filer.retry", here_is_file_id)
 
 __Attributes:__
 * data-jfiler-name | name of input (is used while applying plugin to a non file input)
