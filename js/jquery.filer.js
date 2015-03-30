@@ -655,7 +655,7 @@
                             });
                         
                         if(obj.length > 0){
-                            if (n.uploadFile && !$.isEmptyObject(n.uploadFile)) {
+                            if (n.uploadFile && !$.isEmptyObject(n.uploadFile) && !obj[0].uploaded) {
                                 f._itFc = obj[0];
                                 f._upload(id);
                                 return true;
