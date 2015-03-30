@@ -1,4 +1,4 @@
-jQuery.filer 1.0
+jQuery.filer 1.0.1
 ============
 jQuery.filer - Simple HTML5 File Uploader, a plugin tool for jQuery which change completely File Input and make it with multiple file selection, drag&drop support, different validations, thumbnails, icons, instant upload, print-screen upload and many other features and options.
 
