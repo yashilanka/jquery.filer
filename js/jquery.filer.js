@@ -2,7 +2,7 @@
  * jQuery.filer
  * Copyright (c) 2015 CreativeDream
  * Website: http://creativedream.net/plugins/jquery.filer
- * Version: 1.0 (30-01-2015)
+ * Version: 1.0.1 (30-03-2015)
  * Requires: jQuery v1.7.1 or later
  */
 (function($) {
@@ -647,6 +647,23 @@
                             }
                         }
                     },
+                    
+                    _retryUpload: function (e, data) {
+                        var id = parseInt(typeof data == "object" ? data.attr("data-jfiler-index") : data),
+                            obj = f._itFl.filter(function(value, key){
+                                return value.id == id; 
+                            });
+                        
+                        if(obj.length > 0){
+                            if (n.uploadFile && !$.isEmptyObject(n.uploadFile)) {
+                                f._itFc = obj[0];
+                                f._upload(id);
+                                return true;
+                            }
+                        }else{
+                            return false;   
+                        }
+                    },
 
                     _remove: function(e, el) {
                         if (el.binded) {
@@ -807,6 +824,9 @@
             });
             s.on("filer.generateList", function(e, data) {
                 return f._getList(e, data)
+            });
+            s.on("filer.retry", function(e, data) {
+                return f._retryUpload(e, data)
             });
             return this;
         });
