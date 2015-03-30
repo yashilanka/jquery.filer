@@ -2,7 +2,7 @@
  * jQuery.filer
  * Copyright (c) 2015 CreativeDream
  * Website: http://creativedream.net/plugins/jquery.filer
- * Version: 1.0.1 (30-03-2015)
+ * Version: 1.0 (30-01-2015)
  * Requires: jQuery v1.7.1 or later
  */
 (function($) {
@@ -436,15 +436,15 @@
                                     }
                                 },
                                 beforeSend: function(jqXHR, settings) {
-                                    return n.uploadFile.beforeSend != null && typeof n.uploadFile.beforeSend == "function" ? n.uploadFile.beforeSend(el, l, p, o, s, jqXHR, settings) : true;
+                                    return n.uploadFile.beforeSend != null && typeof n.uploadFile.beforeSend == "function" ? n.uploadFile.beforeSend(el, l, p, o, s, c.id, jqXHR, settings) : true;
                                 },
                                 success: function(data, textStatus, jqXHR) {
                                     c.uploaded = true;
-                                    n.uploadFile.success != null && typeof n.uploadFile.success == "function" ? n.uploadFile.success(data, el, l, p, o, s, textStatus, jqXHR) : null
+                                    n.uploadFile.success != null && typeof n.uploadFile.success == "function" ? n.uploadFile.success(data, el, l, p, o, s, c.id, textStatus, jqXHR) : null
                                 },
                                 error: function(jqXHR, textStatus, errorThrown) {
                                     c.uploaded = false;
-                                    n.uploadFile.error != null && typeof n.uploadFile.error == "function" ? n.uploadFile.error(el, l, p, o, s, jqXHR, textStatus, errorThrown) : null
+                                    n.uploadFile.error != null && typeof n.uploadFile.error == "function" ? n.uploadFile.error(el, l, p, o, s, c.id, jqXHR, textStatus, errorThrown) : null
                                 },
                                 statusCode: n.uploadFile.statusCode,
                                 cache: false,
