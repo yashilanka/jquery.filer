@@ -23,8 +23,8 @@ Features
 * Drag & Drop Option
 * Trigger options
 
-__Styles:__
-
+Browser Support
+-------
 * Chrome 13+
 * Firefox 3.6+
 * Safari 6+
