@@ -1,4 +1,4 @@
-jQuery.filer 1.0
+jQuery.filer 1.0.1
 ============
 jQuery.filer - Simple HTML5 File Uploader, a plugin tool for jQuery which change completely File Input and make it with multiple file selection, drag&drop support, different validations, thumbnails, icons, instant upload, print-screen upload and many other features and options.
 
@@ -23,6 +23,14 @@ Features
 * Drag & Drop Option
 * Trigger options
 
+Browser Support
+-------
+* Chrome 13+
+* Firefox 3.6+
+* Safari 6+
+* Opera 11.1+
+* Internet Explorer 10+
+
 Usage
 -------
 __Styles:__
@@ -33,20 +41,26 @@ Include the jquery.filer css file in your html page.
 <link href="./css/themes/jquery.filer-dragdropbox-theme.css" type="text/css" rel="stylesheet" />
 ~~~~
 
-__Javascript:__
+__Scripts:__
 
 Include the jQuery library and jquery.filer script file in your html page.
 ~~~~ html
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="./js/jquery.filer.min.js"></script>
 ~~~~
-Create link elements whose href attributes will contain the path of the element you wish to open within the iLightbox.
+
+__HTML:__
+
+Create an input file element.
 ~~~~ html
 <form action="upload.php" method="post" enctype="multipart/form-data">
     <input type="file" name="files[]" id="input_file" multiple="multiple">
     <input type="submit">
 </form>
 ~~~~
+
+__Javascript:__
+
 The plugin is named "filer" and can be applied to any element. You will probably also specify some options while applying the plugin.
 ~~~~ javascript
 $(document).ready(function() {
@@ -132,6 +146,7 @@ $(document).ready(function() {
             },
             statusCode: {},
             onProgress: function(){},
+            onComplete: function(){}
         },
         dragDrop: {
             dragEnter: null,
@@ -195,15 +210,16 @@ __Options:__
     * __beforeSend__ A pre-request callback function {Function}
     * __success__ A function to be called if the request succeeds {Function}
     * __error__ A function to be called if the request fails {Function}
-    * __statusCode__ An object of numeric HTTP codes {Function}
+    * __statusCode__ An object of numeric HTTP codes {Object}
     * __onProgress__ A function called while uploading file with progress percentage {Function}
+    * __onComplete__ A function called when all files were uploaded {Function}
 * __dragDrop__
     * __dragEnter__ A function that is fired when a dragged element enters the input. {Function}
     * __dragLeave__ A function that is fired when a dragged element leaves the input. {Function}
     * __drop__ A function that is fired when a dragged element is dropped on a valid drop target.
 * __addMore__ Multiple file selection without instant uploading {Boolean}
 * __clipBoardPaste__ Printscreen paste and upload {Boolean}
-* __excludeName__ Removed files input name {null, String} Default: jfiler-items-exclude-(input file name)-(input id)
+* __excludeName__ Removed files input name {null, String} Default: jfiler-items-exclude-(input file name)-(input index)
 * __beforeShow__ A function that is fired before showing thunbnails {Function}
 * __onSelect__ A function that is fired after selecting files {Function}
 * __afterShow__ A function that is fired after appending all thumbnails items {Function}
@@ -226,6 +242,7 @@ __Triggers:__
 * $('#input_file').trigger("filer.remove", {id:0})
 * $('#input_file').trigger("filer.reset")
 * $('#input_file').trigger("filer.getList", {files:[]})
+* $('#input_file').trigger("filer.retry", here_is_file_id)
 
 __Attributes:__
 * data-jfiler-name | name of input (is used while applying plugin to a non file input)
@@ -241,7 +258,7 @@ __Attributes:__
 
 Filer Variables
 -------
-Filer Variables are created for simple usage them in the plugin string options. To use them just write <b>{{fi-(variable name)}}</b>. Below are all available variables that can be used:
+Filer Variables are created for simple usage them in the plugin string options. To use them just write <b>{{fi-(variable name)}}</b>. Below are all available combinations that can be used:
 * fi-name
 * fi-size
 * fi-size2
